@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>SiapaCepatTebak</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎮 SiapaCepatTebak</h1>
+  <div>
+    <input id="secretWord" placeholder="Masukkan kata rahasia" />
+    <button onclick="setWord()">Set Kata</button>
+  </div>
+  <div>
+    <input id="guessInput" placeholder="Tebak kata..." />
+    <button onclick="sendGuess()">Tebak</button>
+  </div>
+  <div id="log"></div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
